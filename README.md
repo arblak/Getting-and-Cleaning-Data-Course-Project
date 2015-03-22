@@ -34,6 +34,16 @@ This script downloads the data zip file provided at the data source to the __"/d
 4. Once this is done, the three datasets (X, y and subject) were merged into a larger dataset, which I chose to name dataFinal, which is a tidy dataset, representing 66 variables across describing mean and standard deviation across several observations.
 5. A new tidy dataset is then created which aggregated the data from step 4 above by the mean for each variable, for each activity and each subject (volunteer)
 
+## How to create the tidy data set
+1. clone this repository: git clone https://github.com/arblak/Getting-and-Cleaning-Data-Course-Project.git
+2. download compressed raw data
+3. unzip raw data and copy the directory UCI HAR Dataset to the cloned repository root directory
+4. open a R console and set the working directory to the repository root (use setwd())
+5. source __run_analysis.R__ script (it requires the plyr package): source('run_analysis.R')
+
+In the repository root directory you find the file __tidydata.txt__ with the tidy data set.
+
+
 
 
 
